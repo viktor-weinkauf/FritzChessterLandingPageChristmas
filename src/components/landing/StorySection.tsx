@@ -10,24 +10,24 @@ export const StorySection = () => (
         <div className="flex-1">
           <div className="festive-card p-8 md:p-10" style={{ borderColor: '#e33913' }}>
             <h2 className="font-lobster text-3xl md:text-4xl text-foreground mb-2">
-              A Kingdom in <span style={{ color: '#e33913' }}>Crisis</span>
+              A Chess Kingdom in <span style={{ color: '#e33913' }}>Crisis</span>
             </h2>
             <h3 className="font-lobster text-2xl md:text-3xl mb-8" style={{ color: '#21368c' }}>
-              A Duel for the Crown
+              The Christmas Chess Adventure Begins
             </h3>
 
             <div className="space-y-4 font-fredoka-original text-foreground/80 leading-relaxed">
               <p>
-                Your child isn't signing up for a "class." They are <strong style={{ color: '#21368c' }}>stepping into a story.</strong>
+                This Christmas, don't just hand them another toy. <strong style={{ color: '#21368c' }}>Drop them into an adventure.</strong>
               </p>
               <p>
-                King White and Queen White have gone on vacation, leaving Prince Fritz and his cousin Bianca in charge. But the evil <span className="font-semibold" style={{ color: '#e33913' }}>King Black</span> has challenged them to a duel!
+                King White and Queen White have gone on holiday, leaving Prince Fritz and his cousin Bianca in charge of the kingdom. But the evil <span className="font-semibold" style={{ color: '#e33913' }}>King Black</span> has challenged them to a chess duel!
               </p>
               <p>
-                There's just one problem: <strong style={{ color: '#e33913' }}>Fritz doesn't know how to play.</strong>
+                There's just one problem: <strong style={{ color: '#e33913' }}>Fritz doesn't know how to play chess.</strong>
               </p>
               <p>
-                Guided by <span className="font-semibold" style={{ color: '#21368c' }}>Fred the Rat</span> (a sewer-dwelling chess coach), your child will travel through the kingdom, solving puzzles, wrestling giants, and smashing toilets to build their skills before the final showdown.
+                With <span className="font-semibold" style={{ color: '#21368c' }}>Fred the Rat</span> as their coach, your child will explore the kingdom over the holidays â solving puzzles, wrestling giants, and smashing toilets â before the final showdown on Christmas morning (or whenever they're ready).
               </p>
             </div>
           </div>
