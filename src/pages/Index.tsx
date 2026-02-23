@@ -7,6 +7,7 @@ import {
   MethodSection,
   TechSpecsSection,
   TestimonialSection,
+  FAQSection,
   FooterCTA,
   CookieConsent
 } from "@/components/landing";
@@ -23,6 +24,7 @@ const Index = () => {
         <MethodSection />
         <TechSpecsSection />
         <TestimonialSection />
+        <FAQSection />
       </main>
       <FooterCTA />
       <CookieConsent />
