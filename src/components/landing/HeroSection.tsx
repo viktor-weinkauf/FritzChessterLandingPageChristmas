@@ -1,4 +1,4 @@
-﻿import { Brain, Gift, Rocket, Globe, ChevronRight, Sparkles } from "lucide-react";
+import { Brain, Gift, Rocket, Globe, ChevronRight, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 import castleScene from "@/assets/Castle.webp";
 import fredTheRat from "@/assets/fred-the-rat.png";
@@ -47,12 +47,12 @@ export const HeroSection = () => {
           {/* Left Content - contains title, subtitle, pills, and CTA */}
           <div className="flex-1 w-full text-center landscape:lg:text-left flex flex-col">
             {/* Title - order 1 always */}
-            <h2
+            <h1
               className={`font-lobster text-4xl md:text-5xl lg:text-6xl text-white mb-6 pb-2 leading-[1.4] overflow-visible order-1 transition-all duration-1000 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
-              The Christmas Gift That Builds{" "}
+              Fritz &amp; Chesster â The Christmas Chess Gift That Builds{" "}
               <span
                 className="gradient-text inline-block"
                 style={{ whiteSpace: 'nowrap' }}
@@ -60,7 +60,7 @@ export const HeroSection = () => {
                 Strategic Minds
               </span>
               <Sparkles className="inline-block w-8 h-8 ml-2 text-yellow-300 animate-pulse" />
-            </h2>
+            </h1>
 
             {/* Castle Card - order 2 in portrait (appears after title), hidden in landscape */}
             <div
@@ -149,7 +149,7 @@ export const HeroSection = () => {
                   aria-label={`Gift Fritz and Chesster now for ${formatPrice()}`}
                 >
                   <Gift className="w-5 h-5 transition-transform group-hover:rotate-12" aria-hidden="true" />
-                  Gift Now – {formatPrice()}
+                  Gift Now â {formatPrice()}
                 </a>
                 <p className="text-white/80 text-sm font-fredoka-original flex items-center gap-1">
                   <Sparkles className="w-3 h-3" />
