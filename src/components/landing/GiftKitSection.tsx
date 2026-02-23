@@ -73,11 +73,11 @@ export const GiftKitSection = () => {
           }`}
         >
           <h2 className="font-lobster text-3xl md:text-5xl mb-4 drop-shadow-lg">
-            Ready to Play in Minutes
+            Gift Chess & Start Playing in Minutes
             <Sparkles className="inline-block w-8 h-8 ml-3 animate-pulse" />
           </h2>
           <p className="font-fredoka-original text-xl opacity-90 max-w-xl mx-auto">
-            No waiting, no shipping. <strong className="text-yellow-200">Instant digital delivery</strong> means the adventure starts today.
+            Last-minute gift? No problem. <strong className="text-yellow-200">Instant digital delivery via email</strong> â they can unwrap it on Christmas morning.
           </p>
         </div>
 
@@ -122,7 +122,7 @@ export const GiftKitSection = () => {
           }`}
         >
           <p className="font-fredoka-original text-2xl text-primary-foreground/90 mb-8 italic max-w-lg mx-auto">
-            It's not just a code. It's their invitation to the Kingdom.
+            It's not just a code. It's the best gift under the tree.
           </p>
           <a
             href={CHECKOUT_URL}
@@ -134,7 +134,7 @@ export const GiftKitSection = () => {
             aria-label={`Gift Fritz and Chesster now for ${formatPrice()}`}
           >
             <Gift className="w-6 h-6 transition-transform group-hover:rotate-12" aria-hidden="true" />
-            Gift Now – {formatPrice()}
+            Gift Now â {formatPrice()}
             <Sparkles className="w-5 h-5 opacity-60" />
           </a>
         </div>
