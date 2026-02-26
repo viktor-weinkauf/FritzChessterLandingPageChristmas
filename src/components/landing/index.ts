@@ -6,6 +6,7 @@ export { GiftKitSection } from "./GiftKitSection";
 export { MethodSection } from "./MethodSection";
 export { TechSpecsSection } from "./TechSpecsSection";
 export { TestimonialSection } from "./TestimonialSection";
+export { FAQSection } from "./FAQSection";
 export { FooterCTA } from "./FooterCTA";
 export { FeatureCard } from "./FeatureCard";
 export { SnowEffect } from "./SnowEffect";
