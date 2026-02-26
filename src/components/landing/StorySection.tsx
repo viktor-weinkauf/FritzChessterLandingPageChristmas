@@ -27,7 +27,7 @@ export const StorySection = () => (
                 There's just one problem: <strong style={{ color: '#e33913' }}>Fritz doesn't know how to play chess.</strong>
               </p>
               <p>
-                With <span className="font-semibold" style={{ color: '#21368c' }}>Fred the Rat</span> as their coach, your child will explore the kingdom over the holidays â solving puzzles, wrestling giants, and smashing toilets â before the final showdown on Christmas morning (or whenever they're ready).
+                With <span className="font-semibold" style={{ color: '#21368c' }}>Fred the Rat</span> as their coach, your child will explore the kingdom over the holidays — solving puzzles, wrestling giants, and smashing toilets — before the final showdown on Christmas morning (or whenever they're ready).
               </p>
             </div>
           </div>

@@ -52,7 +52,7 @@ export const HeroSection = () => {
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
-              Fritz &amp; Chesster â The Christmas Chess Gift That Builds{" "}
+              <span style={{ color: '#e33913' }}>Fritz</span> <span style={{ color: '#5a7fee' }}>&amp;</span> <span style={{ color: '#e33913' }}>Chesster</span> — The Christmas Chess Gift That Builds{" "}
               <span
                 className="gradient-text inline-block"
                 style={{ whiteSpace: 'nowrap' }}
@@ -149,7 +149,7 @@ export const HeroSection = () => {
                   aria-label={`Gift Fritz and Chesster now for ${formatPrice()}`}
                 >
                   <Gift className="w-5 h-5 transition-transform group-hover:rotate-12" aria-hidden="true" />
-                  Gift Now â {formatPrice()}
+                  Gift Now – {formatPrice()}
                 </a>
                 <p className="text-white/80 text-sm font-fredoka-original flex items-center gap-1">
                   <Sparkles className="w-3 h-3" />

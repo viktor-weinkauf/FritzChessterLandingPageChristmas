@@ -28,7 +28,7 @@ export const MethodSection = () => {
           How Kids Learn Chess: The <span style={{ color: '#e33913' }}>"Sumo"</span> Method
         </h2>
         <p className="font-fredoka-original text-lg text-muted-foreground">
-          Learning Chess by Accident â Memory hooks that <strong style={{ color: '#21368c' }}>stick forever.</strong>
+          Learning Chess by Accident — Memory hooks that <strong style={{ color: '#21368c' }}>stick forever.</strong>
         </p>
         <p className="font-fredoka-original text-muted-foreground mt-2 max-w-xl mx-auto">
           Most apps drill kids with abstract rules. We use games that make the concepts unforgettable.

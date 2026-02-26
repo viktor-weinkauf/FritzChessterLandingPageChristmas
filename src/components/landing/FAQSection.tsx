@@ -1,43 +1,47 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ChevronDown, HelpCircle } from "lucide-react";
 
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: ReactNode;
 }
+
+const B = ({ children, color = '#21368c' }: { children: ReactNode; color?: string }) => (
+  <strong style={{ color }}>{children}</strong>
+);
 
 const faqItems: FAQItem[] = [
   {
     question: "Is Fritz & Chesster a good Christmas gift for kids?",
-    answer: "Absolutely! Fritz & Chesster is one of the top-rated educational gifts for children ages 4â12. It's an award-winning chess adventure game that kids actually enjoy playing. Instant digital delivery means no shipping delays â perfect for last-minute gift giving."
+    answer: <>Absolutely! Fritz & Chesster is one of the <B>top-rated educational gifts</B> for children ages 4–12. It's an <B color="#e33913">award-winning chess adventure game</B> that kids actually enjoy playing. <B>Instant digital delivery</B> means no shipping delays — perfect for last-minute gift giving.</>
   },
   {
     question: "What age is Fritz & Chesster suitable for?",
-    answer: "Fritz & Chesster is designed for children ages 4â12. Younger kids (4â6) enjoy the mini-games and puzzles with a parent's help, while older children (7â12) can play independently and progress through the full chess curriculum at their own pace."
+    answer: <>Fritz & Chesster is designed for <B>children ages 4–12</B>. Younger kids (4–6) enjoy the mini-games and puzzles with a parent's help, while older children (7–12) can <B>play independently</B> and progress through the full chess curriculum at their own pace.</>
   },
   {
     question: "Does my child need to know chess already?",
-    answer: "Not at all! Fritz & Chesster is designed for complete beginners. The game starts with the very basics â how pieces move, what the board looks like â and builds up to full chess games through fun adventures and mini-games. It's the perfect way to introduce chess."
+    answer: <><B color="#e33913">Not at all!</B> Fritz & Chesster is designed for <B>complete beginners</B>. The game starts with the very basics — how pieces move, what the board looks like — and builds up to full chess games through fun adventures and mini-games. It's the <B>perfect way to introduce chess</B>.</>
   },
   {
     question: "How does the digital gift delivery work?",
-    answer: "After purchase, you'll receive an activation code via email within minutes. You can print it, put it in a card, or forward the email. The recipient enters the code at chess-for-children.chessbase.com and starts playing immediately â no downloads or installation needed."
+    answer: <>After purchase, you'll receive an <B>activation code via email</B> within minutes. You can print it, put it in a card, or forward the email. The recipient enters the code at chess-for-children.chessbase.com and <B>starts playing immediately</B> — no downloads or installation needed.</>
   },
   {
     question: "What devices can they play on over the holidays?",
-    answer: "Fritz & Chesster works on Windows PCs, Mac (via browser), iPads, Android tablets, and Chromebooks. It runs in any modern web browser. Great for playing at home, at grandparents' houses, or on road trips over the holidays."
+    answer: <>Fritz & Chesster works on <B>Windows PCs, Mac (via browser), iPads, Android tablets, and Chromebooks</B>. It runs in <B>any modern web browser</B>. Great for playing at home, at grandparents' houses, or on road trips over the holidays.</>
   },
   {
     question: "Is this a subscription or a one-time purchase?",
-    answer: "Fritz & Chesster Volume 1 is a one-time purchase â no subscriptions, no in-app purchases, no ads. You buy it once and the child has unlimited access to the full game forever. No hidden costs after Christmas."
+    answer: <>Fritz & Chesster Volume 1 is a <B color="#e33913">one-time purchase</B> — no subscriptions, no in-app purchases, no ads. You buy it once and the child has <B>unlimited access to the full game forever</B>. No hidden costs after Christmas.</>
   },
   {
     question: "Can I buy it for multiple children?",
-    answer: "Each purchase supports multiple player profiles, so siblings can each have their own save game and progress at their own pace. If you're buying for kids in different households, you'll need separate purchases."
+    answer: <>Each purchase supports <B>multiple player profiles</B>, so siblings can each have their own save game and progress at their own pace. If you're buying for kids in different households, you'll need separate purchases.</>
   },
   {
     question: "Is Fritz & Chesster available in my language?",
-    answer: "Yes! Fritz & Chesster is available in 12 languages: English, German, Spanish, French, Italian, Portuguese, Dutch, Polish, Russian, Swedish, Danish, and Norwegian. Perfect for international families."
+    answer: <>Yes! Fritz & Chesster is available in <B color="#e33913">12 languages</B>: English, German, Spanish, French, Italian, Portuguese, Dutch, Polish, Russian, Swedish, Danish, and Norwegian. <B>Perfect for international families.</B></>
   }
 ];
 
@@ -64,9 +68,9 @@ const FAQItem = ({ item, isOpen, onToggle }: { item: FAQItem; isOpen: boolean; o
         isOpen ? 'max-h-96 opacity-100 pb-5' : 'max-h-0 opacity-0'
       }`}
     >
-      <p className="font-fredoka-original text-sm text-muted-foreground leading-relaxed px-2">
+      <div className="font-fredoka-original text-sm text-muted-foreground leading-relaxed px-2">
         {item.answer}
-      </p>
+      </div>
     </div>
   </div>
 );
@@ -103,11 +107,12 @@ export const FAQSection = () => {
           }`}
         >
           <div className="text-center mb-10">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-4 bg-gradient-to-br from-yellow-400/30 to-orange-400/30">
-              <HelpCircle className="w-7 h-7 text-yellow-600" aria-hidden="true" />
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-4 bg-gradient-to-br from-yellow-400/30 to-orange-400/30
+              hover:scale-110 hover:rotate-6 transition-all duration-300 cursor-default">
+              <HelpCircle className="w-7 h-7" style={{ color: '#e33913' }} aria-hidden="true" />
             </div>
             <h2 className="font-lobster text-3xl md:text-4xl mb-3" style={{ color: '#21368c' }}>
-              Christmas Chess Gift â Questions Parents Ask
+              Christmas <span style={{ color: '#e33913' }}>Chess Gift</span> — Questions Parents Ask
             </h2>
             <p className="font-fredoka-original text-muted-foreground max-w-xl mx-auto">
               Everything you need to know before gifting Fritz & Chesster this Christmas.

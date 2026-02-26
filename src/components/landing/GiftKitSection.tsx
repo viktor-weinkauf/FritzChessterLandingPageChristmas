@@ -77,7 +77,7 @@ export const GiftKitSection = () => {
             <Sparkles className="inline-block w-8 h-8 ml-3 animate-pulse" />
           </h2>
           <p className="font-fredoka-original text-xl opacity-90 max-w-xl mx-auto">
-            Last-minute gift? No problem. <strong className="text-yellow-200">Instant digital delivery via email</strong> â they can unwrap it on Christmas morning.
+            Last-minute gift? No problem. <strong className="text-yellow-200">Instant digital delivery via email</strong> — they can unwrap it on Christmas morning.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export const GiftKitSection = () => {
               )}
 
               <div
-                className={`parchment rounded-2xl p-6 text-center relative z-10
+                className={`parchment rounded-2xl p-6 text-center relative z-10 h-full
                   hover:shadow-2xl hover:-translate-y-2 transition-all duration-500
                   ${stepsVisible[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               >
@@ -134,7 +134,7 @@ export const GiftKitSection = () => {
             aria-label={`Gift Fritz and Chesster now for ${formatPrice()}`}
           >
             <Gift className="w-6 h-6 transition-transform group-hover:rotate-12" aria-hidden="true" />
-            Gift Now â {formatPrice()}
+            Gift Now – {formatPrice()}
             <Sparkles className="w-5 h-5 opacity-60" />
           </a>
         </div>
